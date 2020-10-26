@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  service:
+    container_name: service
+    build: environment/service/
+    ports:
+      - 8080:80
+    volumes:
+      - ./service:/var/www/html

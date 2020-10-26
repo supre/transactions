@@ -1,0 +1,8 @@
+#!/bin/sh
+
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php composer-setup.php --quiet
+RESULT=$?
+rm composer-setup.php
+cp composer.phar /usr/bin/composer
+exit $RESULT

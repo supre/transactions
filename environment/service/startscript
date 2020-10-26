@@ -1,0 +1,32 @@
+#!/bin/sh
+
+echo "Executing : php -d memory_limit=-1 /usr/local/bin/composer install"
+php -d memory_limit=-1 /root/composer.phar install -o
+
+if [ ! -d "storage/app/public" ]; then
+    mkdir -p storage/app/public
+    touch storage/app/.gitignore && echo "." >> storage/app/.gitignore
+fi
+
+if [ ! -d "storage/logs" ]; then
+    mkdir -p storage/logs
+    touch storage/logs/.gitignore && echo "." >> storage/logs/.gitignore
+fi
+
+if [ ! -d "storage/framework/cache" ]; then
+    php artisan cache:clear
+    mkdir -p storage/framework/cache
+    touch storage/framework/cache/.gitignore && echo "." >> storage/framework/cache/.gitignore
+fi
+
+if [ ! -d "storage/framework/views" ]; then
+    mkdir -p storage/framework/views
+    touch storage/framework/views/.gitignore && echo "." >> storage/framework/views/.gitignore
+fi
+
+if [ ! -d "storage/framework/sessions" ]; then
+    mkdir -p storage/framework/sessions
+    touch storage/framework/sessions/.gitignore && echo "." >> storage/framework/sessions/.gitignore
+fi
+
+apache2-foreground
