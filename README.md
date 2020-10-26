@@ -4,9 +4,8 @@
 This project has been created for TrackTik's technical test evaluation. The following scenario replictions have been provided
  to validate the questions asked in the technical test:
  
-1. A REST api has been provided that allows for making a dummy order. 
-    1. Each transaction payload consists of
-multiple line items. 
+1. A REST api has been provided that allows making a dummy order. 
+    1. Each transaction payload consists of multiple line items. 
     2. Each line item contains 1 electronic item. 
     3. Each electronic item can have extras ranging from 0 
 to infinite as per configuration. 

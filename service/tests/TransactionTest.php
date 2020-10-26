@@ -10,7 +10,7 @@ use App\Models\Microwave\Microwave;
 use App\Models\Microwave\MicrowaveFactory;
 use App\Models\Television\Television;
 use App\Models\Television\TelevisionFactory;
-use app\Models\Transaction\LineItem;
+use App\Models\Transaction\LineItem;
 use App\Models\Transaction\TransactionFactory;
 use Codeception\Test\Unit;
 

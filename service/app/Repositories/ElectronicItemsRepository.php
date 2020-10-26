@@ -7,12 +7,6 @@ use App\Models\ElectronicItem;
 
 class ElectronicItemsRepository
 {
-//    public function __construct(array $items, array $validElectronicTypes)
-//    {
-//        $this->items = $items;
-//        $this->allowedElectronicTypes = $validElectronicTypes;
-//    }
-
     public function __construct(array $items)
     {
         $this->items = $items;
@@ -59,6 +53,5 @@ class ElectronicItemsRepository
     }
 
     private array $items;
-    private array $allowedElectronicTypes;
 
 }
