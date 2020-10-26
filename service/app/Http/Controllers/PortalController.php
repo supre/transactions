@@ -26,7 +26,7 @@ class PortalController extends BaseController
 
     public function __invoke(Router $router)
     {
-        $router->addRoute(['GET', 'OPTIONS'], '/portal', $this->call('getPortal'));
+        $router->addRoute(['GET', 'OPTIONS'], '/api/portal', $this->call('getPortal'));
     }
 
     public function getPortal(Request $request)

@@ -34,7 +34,7 @@ class TransactionController extends BaseController
 
     public function __invoke(Router $router)
     : void {
-        $router->addRoute('POST', '/transaction', $this->call('postTransaction'));
+        $router->addRoute('POST', '/api/transaction', $this->call('postTransaction'));
     }
 
     public function postTransaction(Request $request)
