@@ -52,6 +52,13 @@ class TransactionController extends BaseController
         );
     }
 
+    /**
+     * FIXME Serialization could be a cross-cutting json specification (e.g. JsonApi/OpenApi specification) middleware
+     * implementation that globally serializes objects to their presentation payloads
+     *
+     * @param Transaction $transaction
+     * @return array
+     */
     private function serializeTransactionForPresentation(Transaction $transaction)
     : array {
         $serializedTransaction = [];
@@ -91,6 +98,14 @@ class TransactionController extends BaseController
         return $serializedTransaction;
     }
 
+
+    /**
+     * FIXME following method can be part of a cross-cutting json specification that translates payloads globally
+     * This could be converted into a middleware
+     *
+     * @param array $payload
+     * @return array
+     */
     private function getElectronicItemsForTransaction(array $payload)
     : array {
         $transactionItems = [];
