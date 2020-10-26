@@ -45,10 +45,23 @@ trait ExtrasApplicable
 
         $this->checkExtrasCanStillBeAdded($quantity);
 
-        $this->attachedExtras[] = [
-            'item'     => $extra,
-            'quantity' => $quantity
-        ];
+        $existingSimilarExtraFound = false;
+
+        collect($this->attachedExtras)->map(
+            function ($item, $key) use (&$existingSimilarExtraFound, $extra, $quantity) {
+                if ($item['item']->getId() === $extra->getId() && $item['item']->getType() === $extra->getType()) {
+                    $this->attachedExtras[$key]['quantity'] += $quantity;
+                    $existingSimilarExtraFound = true;
+                }
+            }
+        );
+
+        if (!$existingSimilarExtraFound) {
+            $this->attachedExtras[] = [
+                'item'     => $extra,
+                'quantity' => $quantity
+            ];
+        }
     }
 
     private function getTotalPriceForAttachedExtrasInDecimals()

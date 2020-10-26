@@ -128,7 +128,10 @@ class TransactionController extends BaseController
                 $extraElectronicItem = $this->repositoryOfAllElectronicItems->getItemByTypeAndId($extraType, $extraId);
 
                 if (!$extraElectronicItem || !$extraElectronicItem instanceof ExtrasInterface) {
-                    throw new NotAcceptableHttpException("Extras could not be added for $type with id $id");
+                    throw new NotAcceptableHttpException(
+                        "Extras of type " . $extraElectronicItem->getType(
+                        ) . " could not be added for $type with id $id"
+                    );
                 }
 
                 try {
