@@ -21,9 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b168f4f6-1927-4cd8-8864-c4c135d7ce52" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/app/Repositories/ElectronicItemsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/app/Repositories/ElectronicItemsRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/tests/TransactionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/tests/TransactionTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/service/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/app/Http/Controllers/TransactionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/TransactionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/app/Models/Transaction/LineItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/app/Models/Transaction/LineItem.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,33 +178,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/service" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/service/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Codeception.TransactionTest.php::testSortOrderOfLineItems">
-    <configuration name="TransactionTest.php::testExpectedTotal" type="CodeceptionConfigurationType" factoryName="Codeception" temporary="true">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="tracktik_service:latest" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <PhpTestRunnerSettings configuration_file="$PROJECT_DIR$/service/codeception.yml" file="$PROJECT_DIR$/service/tests/TransactionTest.php" method="testExpectedTotal" scope="Method" use_alternative_configuration_file="true" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TransactionTest.php::testSortOrderOfLineItems" type="CodeceptionConfigurationType" factoryName="Codeception" temporary="true">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="tracktik_service:latest" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <PhpTestRunnerSettings configuration_file="$PROJECT_DIR$/service/codeception.yml" file="$PROJECT_DIR$/service/tests/TransactionTest.php" method="testSortOrderOfLineItems" scope="Method" use_alternative_configuration_file="true" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Codeception.codeception.yml">
     <configuration name="codeception.yml" type="CodeceptionConfigurationType" factoryName="Codeception" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -219,15 +205,11 @@
     </configuration>
     <list>
       <item itemvalue="Codeception.codeception.yml" />
-      <item itemvalue="Codeception.TransactionTest.php::testExpectedTotal" />
-      <item itemvalue="Codeception.TransactionTest.php::testSortOrderOfLineItems" />
       <item itemvalue="PHP Remote Debug.Docker" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Codeception.TransactionTest.php::testSortOrderOfLineItems" />
         <item itemvalue="Codeception.codeception.yml" />
-        <item itemvalue="Codeception.TransactionTest.php::testExpectedTotal" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +223,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603713907790</updated>
-      <workItem from="1603713911167" duration="9068000" />
+      <workItem from="1603713911167" duration="10440000" />
     </task>
     <servers />
   </component>
@@ -283,10 +265,14 @@
       <screen x="-411" y="-1440" width="2560" height="1440" />
     </state>
     <state x="553" y="-1069" key="#TransactionTest.php::testExpectedTotal/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603720158366" />
-    <state x="52" y="-1184" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603721827536">
+    <state x="553" y="-1069" key="#TransactionTest.php::testSortOrderOfLineItems" timestamp="1603725918793">
       <screen x="-411" y="-1440" width="2560" height="1440" />
     </state>
-    <state x="52" y="-1184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603721827536" />
+    <state x="553" y="-1069" key="#TransactionTest.php::testSortOrderOfLineItems/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603725918793" />
+    <state x="52" y="-1184" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603725946624">
+      <screen x="-411" y="-1440" width="2560" height="1440" />
+    </state>
+    <state x="52" y="-1184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603725946624" />
     <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1603714988632" />
     <state x="562" y="354" width="573" height="405" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1603714750832">
       <screen x="0" y="0" width="1680" height="1050" />
@@ -300,46 +286,54 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="524" y="193" key="#tests/0.0.1680.1050@0.0.1680.1050" timestamp="1603714864206" />
-    <state width="2518" height="520" key="GridCell.Tab.0.bottom" timestamp="1603721879494">
-      <screen x="-411" y="-1440" width="2560" height="1440" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1603736877274">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="2518" height="520" key="GridCell.Tab.0.bottom/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603721879494" />
+    <state width="2518" height="520" key="GridCell.Tab.0.bottom/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603725959289" />
     <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1603715170007" />
-    <state width="2518" height="520" key="GridCell.Tab.0.center" timestamp="1603721879493">
-      <screen x="-411" y="-1440" width="2560" height="1440" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.23.1680.954@0.23.1680.954" timestamp="1603736877274" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1603736877272">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="2518" height="520" key="GridCell.Tab.0.center/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603721879493" />
+    <state width="2518" height="520" key="GridCell.Tab.0.center/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603725959285" />
     <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1603715169997" />
-    <state width="2518" height="520" key="GridCell.Tab.0.left" timestamp="1603721879491">
-      <screen x="-411" y="-1440" width="2560" height="1440" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.23.1680.954@0.23.1680.954" timestamp="1603736877272" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1603736877266">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="2518" height="520" key="GridCell.Tab.0.left/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603721879491" />
+    <state width="2518" height="520" key="GridCell.Tab.0.left/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603725959283" />
     <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1603715169995" />
-    <state width="2518" height="520" key="GridCell.Tab.0.right" timestamp="1603721879494">
-      <screen x="-411" y="-1440" width="2560" height="1440" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.23.1680.954@0.23.1680.954" timestamp="1603736877266" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1603736877274">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="2518" height="520" key="GridCell.Tab.0.right/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603721879494" />
+    <state width="2518" height="520" key="GridCell.Tab.0.right/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603725959287" />
     <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1603715170004" />
-    <state width="2518" height="520" key="GridCell.Tab.1.bottom" timestamp="1603721879498">
-      <screen x="-411" y="-1440" width="2560" height="1440" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.23.1680.954@0.23.1680.954" timestamp="1603736877274" />
+    <state width="2518" height="520" key="GridCell.Tab.1.bottom" timestamp="1603736877258">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="2518" height="520" key="GridCell.Tab.1.bottom/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603721879498" />
+    <state width="2518" height="520" key="GridCell.Tab.1.bottom/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603725959296" />
     <state width="1638" height="364" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1603714879006" />
-    <state width="2518" height="520" key="GridCell.Tab.1.center" timestamp="1603721879497">
-      <screen x="-411" y="-1440" width="2560" height="1440" />
+    <state width="2518" height="520" key="GridCell.Tab.1.bottom/0.23.1680.954@0.23.1680.954" timestamp="1603736877258" />
+    <state width="2518" height="520" key="GridCell.Tab.1.center" timestamp="1603736877257">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="2518" height="520" key="GridCell.Tab.1.center/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603721879497" />
+    <state width="2518" height="520" key="GridCell.Tab.1.center/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603725959293" />
     <state width="1638" height="364" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1603714879005" />
-    <state width="2518" height="520" key="GridCell.Tab.1.left" timestamp="1603721879495">
-      <screen x="-411" y="-1440" width="2560" height="1440" />
+    <state width="2518" height="520" key="GridCell.Tab.1.center/0.23.1680.954@0.23.1680.954" timestamp="1603736877257" />
+    <state width="2518" height="520" key="GridCell.Tab.1.left" timestamp="1603736877256">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="2518" height="520" key="GridCell.Tab.1.left/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603721879495" />
+    <state width="2518" height="520" key="GridCell.Tab.1.left/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603725959291" />
     <state width="1638" height="364" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1603714879004" />
-    <state width="2518" height="520" key="GridCell.Tab.1.right" timestamp="1603721879498">
-      <screen x="-411" y="-1440" width="2560" height="1440" />
+    <state width="2518" height="520" key="GridCell.Tab.1.left/0.23.1680.954@0.23.1680.954" timestamp="1603736877256" />
+    <state width="2518" height="520" key="GridCell.Tab.1.right" timestamp="1603736877257">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="2518" height="520" key="GridCell.Tab.1.right/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603721879498" />
+    <state width="2518" height="520" key="GridCell.Tab.1.right/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603725959294" />
     <state width="1638" height="364" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1603714879005" />
+    <state width="2518" height="520" key="GridCell.Tab.1.right/0.23.1680.954@0.23.1680.954" timestamp="1603736877257" />
     <state width="2518" height="520" key="GridCell.Tab.2.bottom" timestamp="1603721019467">
       <screen x="-411" y="-1440" width="2560" height="1440" />
     </state>
@@ -369,27 +363,23 @@
       <screen x="-411" y="-1440" width="2560" height="1440" />
     </state>
     <state x="404" y="-990" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603720886056" />
-    <state x="570" y="-1131" width="598" height="822" key="find.popup" timestamp="1603723587780">
+    <state x="570" y="-1131" width="598" height="822" key="find.popup" timestamp="1603745453013">
       <screen x="-411" y="-1440" width="2560" height="1440" />
     </state>
-    <state x="570" y="-1131" width="598" height="822" key="find.popup/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603723587780" />
-    <state x="534" y="-1109" width="670" height="676" key="search.everywhere.popup" timestamp="1603724665645">
+    <state x="570" y="-1131" width="598" height="822" key="find.popup/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603745453013" />
+    <state x="534" y="-1109" width="670" height="676" key="search.everywhere.popup" timestamp="1603745439717">
       <screen x="-411" y="-1440" width="2560" height="1440" />
     </state>
-    <state x="534" y="-1109" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603724665645" />
+    <state x="534" y="-1109" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603745439717" />
+    <state x="620" y="241" width="670" height="493" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1603736848936" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/service/app/Http/Controllers/TransactionController.php</url>
-          <line>41</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/service/tests/TransactionTest.php</url>
-          <line>43</line>
-          <option name="timeStamp" value="2" />
+          <line>143</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

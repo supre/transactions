@@ -1,7 +1,7 @@
 <?php
 
 
-namespace app\Models\Transaction;
+namespace App\Models\Transaction;
 
 
 use App\Models\ElectronicItem;

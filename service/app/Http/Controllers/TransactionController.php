@@ -8,7 +8,7 @@ use App\Exceptions\ExtraNotAllowed;
 use App\Exceptions\MaxExtrasExceeded;
 use App\Models\Contracts\ExtrasAddableInterface;
 use App\Models\Contracts\ExtrasInterface;
-use app\Models\Transaction\LineItem;
+use App\Models\Transaction\LineItem;
 use App\Models\Transaction\Transaction;
 use App\Models\Transaction\TransactionFactory;
 use App\Repositories\ElectronicItemsRepository;
@@ -145,8 +145,7 @@ class TransactionController extends BaseController
 
                 if (!$extraElectronicItem || !$extraElectronicItem instanceof ExtrasInterface) {
                     throw new NotAcceptableHttpException(
-                        "Extras of type " . $extraElectronicItem->getType(
-                        ) . " could not be added for $type with id $id"
+                        "Extras of type " . $extraType . " could not be added for $type with id $id"
                     );
                 }
 
