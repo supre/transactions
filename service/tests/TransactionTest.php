@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Tests;
+namespace Tests;
 
 use App\Models\Controller\Controller;
 use App\Models\Controller\ControllerFactory;

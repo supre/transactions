@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Tests;
+namespace Tests;
 
 use App\Exceptions\MaxExtrasExceeded;
 use App\Models\Console\ConsoleFactory;
