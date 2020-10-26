@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "87520021-5da8-4a30-90b5-042bd93250e1",
+		"name": "TrackTik",
+		"description": "# Overview\n\nBasic API implementation to validate TrackTik test questions.\n\n## Host and Version\nCurrently, we dont have any specific versioning. All calls need to be directed to http://localhost:8080/api to access the api. The host is pointed to the docker implementation and should work out of the box on initialization of docker-compose in the codebase\n\n## Schema\nAll data is sent and received as JSON.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Portal",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/portal",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"portal"
+					]
+				},
+				"description": "HATEOAS endpoint to drive the UI. Returns a payload containing available electronic items and their meta data."
+			},
+			"response": [
+				{
+					"name": "Get Portal",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/portal",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"portal"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 26 Oct 2020 11:54:52 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.38 (Debian)"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.9"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Length",
+							"value": "925"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"type\": \"portal\",\n    \"data\": {\n        \"electronicItems\": {\n            \"console\": {\n                \"maxExtras\": 4,\n                \"canBeSoldStandalone\": true,\n                \"allowedExtraTypes\": [\n                    \"controller\"\n                ],\n                \"items\": [\n                    {\n                        \"price\": 1900,\n                        \"name\": \"Basic Console\",\n                        \"id\": \"1\",\n                        \"isWireless\": false\n                    }\n                ]\n            },\n            \"controller\": {\n                \"maxExtras\": 0,\n                \"canBeSoldStandalone\": false,\n                \"allowedExtraTypes\": [],\n                \"items\": [\n                    {\n                        \"price\": 100,\n                        \"name\": \"Basic wired controller\",\n                        \"id\": \"1\",\n                        \"isWireless\": false\n                    },\n                    {\n                        \"price\": 200,\n                        \"name\": \"Basic wireless controller\",\n                        \"id\": \"2\",\n                        \"isWireless\": true\n                    }\n                ]\n            },\n            \"microwave\": {\n                \"maxExtras\": 0,\n                \"canBeSoldStandalone\": true,\n                \"allowedExtraTypes\": [],\n                \"items\": [\n                    {\n                        \"price\": 500,\n                        \"name\": \"Standard microwave\",\n                        \"id\": \"1\",\n                        \"isWireless\": false\n                    }\n                ]\n            },\n            \"television\": {\n                \"maxExtras\": -1,\n                \"canBeSoldStandalone\": true,\n                \"allowedExtraTypes\": [\n                    \"controller\"\n                ],\n                \"items\": [\n                    {\n                        \"price\": 500.5,\n                        \"name\": \"Standard television 1\",\n                        \"id\": \"1\",\n                        \"isWireless\": false\n                    },\n                    {\n                        \"price\": 1000.35,\n                        \"name\": \"Standard television 2\",\n                        \"id\": \"2\",\n                        \"isWireless\": false\n                    }\n                ]\n            }\n        }\n    },\n    \"links\": {\n        \"transaction\": \"http://localhost:8080/transaction\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "New Transaction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"order\",\n    \"data\": {\n        \"items\": [\n            {\n                \"type\": \"console\",\n                \"id\": 1,\n                \"quantity\": 1,\n                \"extras\": [\n                    {\n                        \"type\": \"controller\",\n                        \"id\": 1,\n                        \"quantity\": 2\n                    },\n                    {\n                        \"type\": \"controller\",\n                        \"id\": 2,\n                        \"quantity\": 2\n                    }\n                ]\n            },\n            {\n                \"type\": \"television\",\n                \"id\": 1,\n                \"quantity\": 1,\n                \"extras\": [\n                    {\n                        \"type\": \"controller\",\n                        \"id\": 2,\n                        \"quantity\": 2\n                    }\n                ]\n            },\n            {\n                \"type\": \"television\",\n                \"id\": 2,\n                \"quantity\": 1,\n                \"extras\": [\n                    {\n                        \"type\": \"controller\",\n                        \"id\": 2,\n                        \"quantity\": 1\n                    }\n                ]\n            },\n            {\n                \"type\": \"microwave\",\n                \"id\": 1,\n                \"quantity\": 1\n            }\n        ]\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/transaction",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"transaction"
+					]
+				},
+				"description": "Based on the electronic items returned by portal, UI can compile an order for the electronic items to be purchased. Relationships links can be defined in the paylod to create multi-level purchase line items.\n\nExample contains the scenario to replicate the question asked in the test. \n\nEach line item provides the total price for the primary electronic item and any attached peripherals"
+			},
+			"response": [
+				{
+					"name": "New Transaction (Test Question)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\": \"order\",\n    \"data\": {\n        \"items\": [\n            {\n                \"type\": \"console\",\n                \"id\": 1,\n                \"quantity\": 1,\n                \"extras\": [\n                    {\n                        \"type\": \"controller\",\n                        \"id\": 1,\n                        \"quantity\": 2\n                    },\n                    {\n                        \"type\": \"controller\",\n                        \"id\": 2,\n                        \"quantity\": 2\n                    }\n                ]\n            },\n            {\n                \"type\": \"television\",\n                \"id\": 1,\n                \"quantity\": 1,\n                \"extras\": [\n                    {\n                        \"type\": \"controller\",\n                        \"id\": 2,\n                        \"quantity\": 2\n                    }\n                ]\n            },\n            {\n                \"type\": \"television\",\n                \"id\": 2,\n                \"quantity\": 1,\n                \"extras\": [\n                    {\n                        \"type\": \"controller\",\n                        \"id\": 2,\n                        \"quantity\": 1\n                    }\n                ]\n            },\n            {\n                \"type\": \"microwave\",\n                \"id\": 1,\n                \"quantity\": 1\n            }\n        ]\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/transaction",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"transaction"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 26 Oct 2020 11:56:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.38 (Debian)"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.9"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Length",
+							"value": "680"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"type\": \"transaction\",\n    \"data\": {\n        \"price\": 5100.85,\n        \"lineItems\": [\n            {\n                \"totalPrice\": 2500,\n                \"itemName\": \"Basic Console\",\n                \"itemPrice\": 1900,\n                \"quantity\": 1,\n                \"contains\": [\n                    {\n                        \"quantity\": 2,\n                        \"name\": \"Basic wired controller\",\n                        \"price\": 100\n                    },\n                    {\n                        \"quantity\": 2,\n                        \"name\": \"Basic wireless controller\",\n                        \"price\": 200\n                    }\n                ]\n            },\n            {\n                \"totalPrice\": 1200.35,\n                \"itemName\": \"Standard television 2\",\n                \"itemPrice\": 1000.35,\n                \"quantity\": 1,\n                \"contains\": [\n                    {\n                        \"quantity\": 1,\n                        \"name\": \"Basic wireless controller\",\n                        \"price\": 200\n                    }\n                ]\n            },\n            {\n                \"totalPrice\": 900.5,\n                \"itemName\": \"Standard television 1\",\n                \"itemPrice\": 500.5,\n                \"quantity\": 1,\n                \"contains\": [\n                    {\n                        \"quantity\": 2,\n                        \"name\": \"Basic wireless controller\",\n                        \"price\": 200\n                    }\n                ]\n            },\n            {\n                \"totalPrice\": 500,\n                \"itemName\": \"Standard microwave\",\n                \"itemPrice\": 500,\n                \"quantity\": 1\n            }\n        ]\n    }\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}

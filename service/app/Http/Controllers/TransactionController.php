@@ -66,7 +66,8 @@ class TransactionController extends BaseController
         $serializedTransaction['price'] = $transaction->getTotalPrice();
         $serializedTransaction['lineItems'] = [];
 
-        collect($transaction->getLineItems())->each(
+        $sortingOrderDesc = true;
+        collect($transaction->getSortedLineItems($sortingOrderDesc))->each(
             function (LineItem $lineItem) use (&$serializedTransaction) {
                 $electronicItem = $lineItem->getItem();
 

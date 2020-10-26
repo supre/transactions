@@ -34,7 +34,11 @@ class ElectronicItemsRepositoryTest extends Unit
         $this->assertCount(1, $consoles);
     }
 
-    public function testGetSortedItems()
+    /**
+     * @group sort
+     * @throws MaxExtrasExceeded
+     */
+    public function testItemsAreSortedAsExpected()
     {
         $electronicItems = $this->electronicItemsForScenario1();
         $electronicsRepository = $this->electronicItemsRepositoryFactory->createRepository($electronicItems);

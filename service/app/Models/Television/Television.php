@@ -32,7 +32,7 @@ class Television extends ElectronicItem implements ExtrasAddableInterface
         ];
     }
 
-    public function getTotalPriceInDecimals()
+    public function getTotalPriceWithoutDecimals()
     : int
     {
         return $this->getPriceInDecimals() + $this->getTotalPriceForAttachedExtrasInDecimals();

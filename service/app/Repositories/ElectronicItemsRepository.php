@@ -29,7 +29,7 @@ class ElectronicItemsRepository
         $items = [];
         collect($this->items)->each(
             function (ElectronicItem $item) use (&$items) {
-                $items[$item->getTotalPriceInDecimals()] = $item;
+                $items[$item->getTotalPriceWithoutDecimals()] = $item;
             }
         );
 

@@ -35,7 +35,13 @@ class LineItem
     public function getTotalPrice()
     : float
     {
-        return ($this->item->getTotalPriceInDecimals() * $this->quantity) / 100;
+        return $this->getTotalPriceWithoutDecimals() / 100;
+    }
+
+    public function getTotalPriceWithoutDecimals()
+    : float
+    {
+        return $this->item->getTotalPriceWithoutDecimals() * $this->quantity;
     }
 
     /**

@@ -36,6 +36,19 @@ class Transaction
         );
     }
 
+    public function getSortedLineItems(bool $desc = false)
+    : array {
+        $sortedLineitems = [];
+
+        collect($this->lineItems)->each(
+            function (LineItem $lineItem) use (&$sortedLineitems) {
+                $sortedLineitems[$lineItem->getTotalPriceWithoutDecimals()] = $lineItem;
+            }
+        );
+
+        return collect(($sortedLineitems))->sortKeys(SORT_NUMERIC, $desc)->toArray();
+    }
+
     /**
      * @var LineItem[]
      */
