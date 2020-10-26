@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   service:
-    container_name: service
+    container_name: tt_service
     build: environment/service/
     ports:
       - 8080:80
