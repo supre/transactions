@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/salesfloor.iml" filepath="$PROJECT_DIR$/.idea/salesfloor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/tracktik.iml" filepath="$PROJECT_DIR$/.idea/tracktik.iml" />
     </modules>
   </component>
 </project>

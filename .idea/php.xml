@@ -1,21 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/service/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/service/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/service/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/service/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/service/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/service/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/service/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/service/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/collections" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/pipeline" />
+      <path value="$PROJECT_DIR$/service/vendor/laravel/lumen-framework" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/view" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/validation" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/config" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/pagination" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/events" />
+      <path value="$PROJECT_DIR$/service/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/log" />
+      <path value="$PROJECT_DIR$/service/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/hashing" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/filesystem" />
+      <path value="$PROJECT_DIR$/service/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/bus" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/session" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/container" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/queue" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/cache" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/auth" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/console" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/encryption" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/translation" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/database" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/testing" />
+      <path value="$PROJECT_DIR$/service/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/macroable" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/broadcasting" />
+      <path value="$PROJECT_DIR$/service/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/http" />
+      <path value="$PROJECT_DIR$/service/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/service/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/service/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/service/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/service/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/service/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/service/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/service/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/service/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/service/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/service/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/service/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/service/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/service/vendor/codeception/phpunit-wrapper" />
+      <path value="$PROJECT_DIR$/service/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/service/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/service/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/service/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/service/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/service/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/service/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/service/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/service/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/service/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/service/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/service/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/service/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/service/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/service/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/service/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/service/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/service/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/service/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/service/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/service/vendor/codeception/codeception" />
+      <path value="$PROJECT_DIR$/service/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/service/vendor/composer" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/service/vendor/codeception/lib-asserts" />
+      <path value="$PROJECT_DIR$/service/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/service/vendor/codeception/module-asserts" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/service/vendor/codeception/stub" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/service/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/service/vendor/codeception/specify" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/service/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/service/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/service/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/service/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/service/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/service/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/service/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/service/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/service/vendor/theseer/tokenizer" />
+    </include_path>
+  </component>
   <component name="PhpInterpreters">
     <interpreters>
-      <interpreter id="1e68cc90-f0a3-4c53-9712-299b6f2d001c" name="salesfloor-service-7.4.9" home="docker-compose://DATA" debugger_id="php.debugger.XDebug">
-        <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_COMPOSE_SERVICE_NAME="service" DOCKER_REMOTE_PROJECT_PATH="/opt/project">
-          <type_data command="EXEC" />
-          <dockerComposeConfigurationPaths>
-            <item value="$PROJECT_DIR$/docker-compose.yml" />
-          </dockerComposeConfigurationPaths>
-          <envs />
-        </remote_data>
+      <interpreter id="56fac871-7047-41a3-a923-4e933825264c" name="tracktik_service:latest" home="docker://DATA" debugger_id="php.debugger.XDebug">
+        <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_IMAGE_NAME="tracktik_service:latest" DOCKER_REMOTE_PROJECT_PATH="/opt/project" />
       </interpreter>
     </interpreters>
   </component>
   <component name="PhpInterpretersPhpInfoCache">
     <phpInfoCache>
-      <interpreter name="salesfloor-service-7.4.9">
+      <interpreter name="tracktik_service:latest">
         <phpinfo binary_type="PHP" php_cli="/usr/local/bin/php" path_separator=":" version="7.4.9">
           <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-pdo_mysql.ini, /usr/local/etc/php/conf.d/docker-php-ext-sockets.ini, /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini, /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini</additional_php_ini>
           <configuration_file>/usr/local/etc/php/php.ini</configuration_file>
