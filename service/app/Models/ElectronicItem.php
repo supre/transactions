@@ -65,7 +65,7 @@ abstract class ElectronicItem
         return $this->price;
     }
 
-    public function getPriceInDecimals()
+    public function getPriceWithoutDecimals()
     : int
     {
         return $this->price * 100;
@@ -74,7 +74,7 @@ abstract class ElectronicItem
     public function getTotalPriceWithoutDecimals()
     : int
     {
-        return $this->getPriceInDecimals();
+        return $this->getPriceWithoutDecimals();
     }
 
     public function getType()

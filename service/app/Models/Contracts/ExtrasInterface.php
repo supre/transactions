@@ -9,7 +9,7 @@ interface ExtrasInterface
     public function getPrice()
     : float;
 
-    public function getPriceInDecimals()
+    public function getPriceWithoutDecimals()
     : int;
 
     public function getType()

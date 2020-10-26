@@ -20,19 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b168f4f6-1927-4cd8-8864-c4c135d7ce52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/app/Http/Controllers/TransactionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/TransactionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/app/Models/Console/Console.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/app/Models/Console/Console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/app/Models/Contracts/ExtrasInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/app/Models/Contracts/ExtrasInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/app/Models/ElectronicItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/app/Models/ElectronicItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/app/Models/Microwave/MicrowaveFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/app/Models/Microwave/MicrowaveFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/app/Models/Television/Television.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/app/Models/Television/Television.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/app/Models/Transaction/LineItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/app/Models/Transaction/LineItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/app/Models/Transaction/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/app/Models/Transaction/Transaction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/app/Repositories/ElectronicItemsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/app/Repositories/ElectronicItemsRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/tests/ElectronicItemsRepositoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/tests/ElectronicItemsRepositoryTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/tests/TransactionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/tests/TransactionTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/app/Models/Traits/ExtrasApplicable.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/app/Models/Traits/ExtrasApplicable.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +243,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603713907790</updated>
-      <workItem from="1603713911167" duration="7404000" />
+      <workItem from="1603713911167" duration="8201000" />
     </task>
     <servers />
   </component>
@@ -382,10 +375,10 @@
       <screen x="-411" y="-1440" width="2560" height="1440" />
     </state>
     <state x="570" y="-1131" width="598" height="822" key="find.popup/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603721146467" />
-    <state x="534" y="-1109" width="670" height="676" key="search.everywhere.popup" timestamp="1603721581026">
+    <state x="534" y="-1109" width="670" height="676" key="search.everywhere.popup" timestamp="1603723552936">
       <screen x="-411" y="-1440" width="2560" height="1440" />
     </state>
-    <state x="534" y="-1109" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603721581026" />
+    <state x="534" y="-1109" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050/-411.-1440.2560.1440@-411.-1440.2560.1440" timestamp="1603723552936" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

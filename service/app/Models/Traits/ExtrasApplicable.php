@@ -64,13 +64,13 @@ trait ExtrasApplicable
         }
     }
 
-    private function getTotalPriceForAttachedExtrasInDecimals()
+    private function getTotalPriceForAttachedExtrasWithoutDecimals()
     : int
     {
         return collect($this->attachedExtras)->reduce(
             function (int $total, array $extra) {
                 ['item' => $item, 'quantity' => $quantity] = $extra;
-                return ($item->getPriceInDecimals() * $quantity) + $total;
+                return ($item->getPriceWithoutDecimals() * $quantity) + $total;
             },
             0
         );
