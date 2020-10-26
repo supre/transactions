@@ -105,14 +105,14 @@ class ElectronicItemsRepositoryTest extends Unit
         $wiredController = $this->controllerFactory->createItemFromData($wiredControllerProperties);
 
         $television1 = $this->televisionFactory->createItemFromData($televisionProperties1);
-        $television1->addController($wirelessController, 2);
+        $television1->addExtra($wirelessController, 2);
 
         $television2 = $this->televisionFactory->createItemFromData($televisionProperties2);
-        $television2->addController($wirelessController, 1);
+        $television2->addExtra($wirelessController, 1);
 
         $console = $this->consoleFactory->createItemFromData($consoleProperties);
-        $console->addController($wirelessController, 2);
-        $console->addController($wiredController, 2);
+        $console->addExtra($wirelessController, 2);
+        $console->addExtra($wiredController, 2);
 
         $microwave = $this->microwaveFactory->createItemFromData($microwaveProperties);
 

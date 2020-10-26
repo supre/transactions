@@ -45,7 +45,7 @@ class ConsoleTest extends Unit
                 );
 
                 $quantity = self::MAX_EXTRAS + 1;
-                $console->addController($controller, $quantity);
+                $console->addExtra($controller, $quantity);
             }
         );
     }
@@ -85,8 +85,8 @@ class ConsoleTest extends Unit
                 );
 
                 $quantity = 1;
-                $console->addController($controller1, $quantity);
-                $console->addController($controller2, self::MAX_EXTRAS);
+                $console->addExtra($controller1, $quantity);
+                $console->addExtra($controller2, self::MAX_EXTRAS);
             }
         );
     }
